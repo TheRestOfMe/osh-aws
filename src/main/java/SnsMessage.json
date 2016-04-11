@@ -1,0 +1,12 @@
+{
+	"Type": "Notification",
+	"MessageId": "ffda9753-fa41-5550-b165-d864ed982367",
+	"TopicArn": "arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Object",
+	"Subject": "Amazon S3 Notification",
+	"Message": "{\"Records\":[{\"eventVersion\":\"2.0\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"us-east-1\",\"eventTime\":\"2016-02-11T23:13:29.094Z\",\"eventName\":\"ObjectCreated:Put\",\"userIdentity\":{\"principalId\":\"AWS:AROAINJPLIR64FRUFDYZO:i-2eeaae91\"},\"requestParameters\":{\"sourceIPAddress\":\"52.23.53.231\"},\"responseElements\":{\"x-amz-request-id\":\"20DBEA9F402388FE\",\"x-amz-id-2\":\"VaqJ5Uw2fbGdsGSeFVHsT5RMrw+UAA1M9xQtFa2xUHzjl3jBcUFR/AQqIotf8It+\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"NewNEXRADLevel2Object\",\"bucket\":{\"name\":\"unidata-nexrad-level2-chunks\",\"ownerIdentity\":{\"principalId\":\"AMNSLGO92Q3HN\"},\"arn\":\"arn:aws:s3:::unidata-nexrad-level2-chunks\"},\"object\":{\"key\":\"KGYX/892/20160211-231245-009-I\",\"size\":22121,\"eTag\":\"fbc0fe0819aaac6f519a9db453a9fb69\",\"sequencer\":\"0056BD1598C86BCE51\"}}}]}",
+	"Timestamp": "2016-02-11T23:13:29.123Z",
+	"SignatureVersion": "1",
+	"Signature": "Qo4F3TP0XgM9sbyH2Pxpou9HctbFT3rbijDG+JjXjTLE6MpKqr4ezTS3l7xdbJ3usvSUaXSIxXHOtDDzsXRaqGDM494js3FGUcgDgdHU2PZsQAkUgOFT8j3KTeYlbrusfnXcmCorjUkIgkdG36BQEgcFYaatog8oLGqcLivWwPv4Y0Q/Qi4mvAFu42RTGRjJwXgei5NTrSJ3xVD9wqtdGgpF2nd7Q+x7p0bwUtfQGgN+6CtH9bPEiFRXETjPBmnVSqrCKhZLfNtPVkcjFpaAeanpjgxLRCtSlaPOuFuAbE1HMfF13yDaKgmesH9/1QXqZR1cHhRdtCsqttoOF4X8XQ==",
+	"SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-bb750dd426d95ee9390147a5624348ee.pem",
+	"UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Object:adb7577d-2eae-4c8c-8d93-09ef88e93435"
+}
