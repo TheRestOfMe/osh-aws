@@ -48,7 +48,6 @@ public class LdmLevel2FileWriter implements ChunkHandler {
 				os.write(b);
 				cnt++;
 			}
-			System.err.println("Bytes counted: " + cnt);
 		}
 		Files.move(ptmp.toFile(), pout.toFile());
 	}

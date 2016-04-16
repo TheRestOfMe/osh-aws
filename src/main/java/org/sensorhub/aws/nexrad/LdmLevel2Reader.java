@@ -102,7 +102,7 @@ public class LdmLevel2Reader {
 	public List<LdmRadial> readMessage31(InputStream is) throws IOException {
 		int ok = is.read(b4);
 		int msgSize = java.nio.ByteBuffer.wrap(b4).getInt(); 
-		System.err.println("Message31 size: " + msgSize);
+//		System.err.println("Message31 size: " + msgSize);
 
 		byte [] bfull = new byte[msgSize];
 		ok = is.read(bfull);
@@ -368,7 +368,7 @@ public class LdmLevel2Reader {
 			if(b == -1)  break;
 			cnt++;
 		}
-		System.err.println("Bytes counted: " + cnt);
+//		System.err.println("Bytes counted: " + cnt);
 	}
 	
 	public void dumpBytes(InputStream is ) throws IOException {
