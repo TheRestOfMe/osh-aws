@@ -36,16 +36,6 @@ public class LdmLevel2FileWriter implements ChunkHandler {
 		try(S3ObjectInputStream is = s3object.getObjectContent()) {
 			dumpChunkToFile(is, outPath);
 		}
-		//		try(S3ObjectInputStream is = s3object.getObjectContent();  
-		//			  BufferedOutputStream os = new BufferedOutputStream(new FileOutputStream(outPath.toString()), BUFFER_SIZE) )  {
-		//			byte [] b = new byte[BUFFER_SIZE];
-		//			int bytesRead;
-		//			while ( (bytesRead = is.read(b)) != -1 ) {
-		//				os.write(b);
-		//			}
-		//		} catch (IOException e1) {
-		//			e1.printStackTrace();
-		//		}
 	}
 
 	public void dumpChunkToFile(InputStream is, Path pout) throws IOException {

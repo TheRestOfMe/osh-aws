@@ -48,8 +48,8 @@ public class QueueFactory
 		listQueues();
 		
 		
-//		deleteQueue("https://sqs.us-west-2.amazonaws.com/384286541835/NexradDynamicQueue");
-		deleteQueue("https://sqs.us-west-2.amazonaws.com/384286541835/NexradDynamicQueueILX");
+//		deleteQueue("https://sqs.us-west-2.amazonaws.com/384286541835/NexradDynamicQueueAMA");
+//		deleteQueue("https://sqs.us-west-2.amazonaws.com/384286541835/NexradQueueKSJT");
 	}
 	
 	public static void listQueues() {

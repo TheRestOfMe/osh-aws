@@ -385,7 +385,7 @@ public class LdmLevel2Reader {
 		int ok = is.read(b4);
 		int recSize = Math.abs(java.nio.ByteBuffer.wrap(b4).getInt());
 		byte[] bfull = new byte[recSize];
-		ok = is.read(b4);
+		ok = is.read(bfull);
 		//		long l = s3object.getObjectMetadata().getInstanceLength();
 		//		byte [] b = new byte[(int)l];
 		//		int ok = is.read(b);
@@ -412,7 +412,7 @@ public class LdmLevel2Reader {
 				os.write(b);
 				cnt++;
 			}
-			System.err.println("Bytes counted: " + cnt);
+//			System.err.println("Bytes counted: " + cnt);
 		}
 	}
 
@@ -430,11 +430,7 @@ public class LdmLevel2Reader {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		LdmLevel2Reader reader = new LdmLevel2Reader();
-		String p = "C:/Data/sensorhub/Level2/test/KDGX/KDGX_535_20160404-221238-023-I";
-//		String p = "C:/Data/sensorhub/Level2/test/KILX/KILX_301_20160406-174217-001-S";
-//		String p = "C:/Data/sensorhub/Level2/test/KDGX/KDGX_536_20160404-222217-001-S";
-//		String p = "C:/Data/sensorhub/Level2/test/KARX/KARX_249_20160406-013816-091-E";
-//		String p = "C:/Data/sensorhub/Level2/test/KNQA/KNQA_16_20160404-215735-034-E";
+		String p = "C:/Data/sensorhub/Level2/test/KSJT/KSJT_847_20160414-212848-001-S";
 		List<LdmRadial> rads = reader.read(new File(p));
 		for(LdmRadial r: rads)
 			System.err.println(rads.size());

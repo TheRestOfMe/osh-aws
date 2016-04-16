@@ -22,13 +22,13 @@ public class SqsTest {
 		//		String queueUrl = QueueFactory.createAndSubscribeQueue(topicArn, "NexradDynamicQueue");
 		//		String queueUrl = "https://sqs.us-east-1.amazonaws.com/633354997535/QueueThis";
 		//		String queueUrl = "https://sqs.us-west-2.amazonaws.com/384286541835/NexradDynamicQueue";
-		String queueUrl  = QueueFactory.createAndSubscribeQueue(topicArn, "NexradDynamicQueueILX");
+		String queueUrl  = QueueFactory.createAndSubscribeQueue(topicArn, "NexradDynamicQueueAMA");
 
 		
 		ExecutorService execService = Executors.newFixedThreadPool(NUM_THREADS);
 		AwsSqsService sqsService = new AwsSqsService(queueUrl);
 		List<String> sites = new ArrayList<>();
-		sites.add("KILX");
+		sites.add("KAMA");
 //		sites.add("KDGX");
 //		sites.add("KGWX");
 

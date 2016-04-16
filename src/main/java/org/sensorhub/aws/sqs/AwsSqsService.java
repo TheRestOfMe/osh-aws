@@ -1,6 +1,9 @@
 package org.sensorhub.aws.sqs;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import org.sensorhub.aws.nexrad.ProcessMessageThread;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.AWSCredentials;
@@ -13,6 +16,9 @@ import com.amazonaws.services.sqs.AmazonSQSClient;
 import com.amazonaws.services.sqs.model.DeleteMessageRequest;
 import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
+
+import edu.emory.mathcs.backport.java.util.concurrent.ExecutorService;
+import edu.emory.mathcs.backport.java.util.concurrent.Executors;
 
 /**
  * <p>Title: AmazonSqsService.java</p>
